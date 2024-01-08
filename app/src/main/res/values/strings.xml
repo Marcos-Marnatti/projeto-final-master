@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Projeto Final</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="login">Login</string>
+    <string name="text_cadastro">\t\t\t\t\tCadastre-se aqui</string>
+    <string name="register_title">Cadastre-se</string>
+    <string name="register_bt">Cadastrar</string>
+    <string name="name">Name</string>
+    <string name="exit">Logout</string>
+    <string name="perfil">Perfil</string>
+    <string name="location">Localizar</string>
+    <string name="minimeze">Minimizar</string>
+
+</resources>

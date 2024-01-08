@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_background"
+    tools:context=".view.Register">
+
+    <TextView
+        android:id="@+id/text_screen_title"
+        style="@style/text_register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/view_container"
+        style="@style/ContainerComponents"
+        android:layout_width="355dp"
+        android:layout_height="290dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_screen_title"
+        />
+
+    <EditText
+        android:id="@+id/register_name"
+        style="@style/edit_text"
+        android:background="@drawable/edit_text"
+        app:layout_constraintTop_toTopOf="@+id/view_container"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:maxLength="20"
+        />
+
+    <EditText
+        android:id="@+id/register_email"
+        style="@style/edit_text"
+        android:background="@drawable/edit_text"
+        android:drawableEnd="@drawable/ic_email"
+        android:layout_marginTop="28dp"
+        android:hint="@string/text_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:maxLength="35"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintTop_toBottomOf="@+id/register_name"
+        />
+
+    <EditText
+        android:id="@+id/register_password"
+        style="@style/edit_text"
+        android:background="@drawable/edit_text"
+        android:drawableEnd="@drawable/ic_eye"
+        app:layout_constraintTop_toBottomOf="@+id/register_email"
+        app:layout_constraintStart_toStartOf="@id/view_container"
+        app:layout_constraintEnd_toEndOf="@id/view_container"
+        android:hint="@string/text_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_register"
+        style="@style/button_login"
+        android:text="@string/register_bt"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/view_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_background"
+    tools:context=".view.MainActivityUser">
+
+    <View
+        android:id="@+id/view_user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/container_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/image_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintStart_toStartOf="@id/view_user"
+        app:layout_constraintEnd_toEndOf="@id/view_user"
+        app:layout_constraintTop_toTopOf="@id/view_user"
+        app:layout_constraintBottom_toBottomOf="@id/view_user"
+        tools:ignore="ContentDescription"
+        />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_user"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/view_user"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription"
+        />
+
+    <ImageView
+        android:id="@+id/user_email"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_white_email"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/user_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription"
+        />
+
+    <TextView
+        android:id="@+id/text_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text_grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/view_user"
+        app:layout_constraintStart_toEndOf="@id/user_icon"
+        />
+
+    <TextView
+        android:id="@+id/text_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text_grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/text_user_name"
+        app:layout_constraintStart_toEndOf="@id/user_icon"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_location"
+        style="@style/button_login"
+        android:text="@string/location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_email" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_exit"
+        style="@style/button_login"
+        android:backgroundTint="@color/red"
+        android:text="@string/exit"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/bt_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
